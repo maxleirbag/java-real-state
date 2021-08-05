@@ -1,4 +1,4 @@
-package imoveis.transação;
+package imoveis.transaÃ§Ã£o;
 
 import java.util.Scanner;
 import imoveis.compras.compradores;
@@ -28,17 +28,17 @@ public class transacao_imovel {
 		ciclano.setOferta_venda(oferta_venda);
 
 		transacao();
-		// Confere se a TRANSAÇÃO deu MATCH
+		// Confere se a TRANSAÃ‡ÃƒO deu MATCH
 		input.close();
 	}
 
 	public static void transacao() {
 
 		String msg;
-		if (fulano.getId_casa_c() == ciclano.getId_casa_v() && fulano.getOferta_compra() > ciclano.getOferta_venda()) {
-			msg = "Parabéns! O imóvel foi vendido.";
+		if (fulano.getId_casa_c() == ciclano.getId_casa_v() && fulano.getOferta_compra() >= ciclano.getOferta_venda()) {
+			msg = "ParabÃ©ns! O imÃ³vel foi vendido.";
 		} else {
-			msg = "Lamento, a transação não foi efetuada. Mais sorte na próxima!";
+			msg = "Lamento, a transaÃ§Ã£o nÃ£o foi efetuada. Mais sorte na prÃ³xima!";
 		}
 		System.out.println(msg);
 	}
